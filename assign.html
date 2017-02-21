@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Network Switch</title>
+
+	<script type="text/javascript" src="switch.js"></script>
+	<link rel="stylesheet" type="text/css" href="switch.css">
+
+</head>
+<body>
+
+	<div id="switchmenu" style="display: none;">
+		<ul id="ul" style="list-style: none; background-color:white; text-align: center; border-radius: 10px; border-color: grey; border-width: 2px; padding: 1px 1px 1px 1px;">
+			<li id="li1" onclick="configure()" class="option">Configure</li>
+			<li id="li2"  class="option">Rename</li>
+			<li id="li3"  class="option">xyz</li>
+			<li id="li4"  class="option">abc</li>
+		</ul>
+	</div>
+	<div onblur="rmswitchmenu()" oncontextmenu="return false">
+		<img  src="img.jpeg" id="image" onmousedown="hide('switchmenu');" onmouseup="hide('switchmenu');" oncontextmenu="display('switchmenu',event);">
+	</div>
+	<div id="config" style="float: center;display: none; ">
+		<table style="border: 3px solid #1E90FF; border-radius: 5px; top: 50%; left: 30%;">
+			<tr><th id="th1" style="font-size: 35px;" >Configure</th></tr>
+			<tr>
+				<td>
+					<form>
+						<table>
+							<tr><p style="opacity: 0.5; color: black;">Interface</p></tr>
+							<tr>
+								<select>
+									<option value="s1">--Select--</option>
+									<option selected value="s2">Serial 0/1</option>
+									<option value="s3">Serial 0/1/0</option>
+									<option value="s4">Serial 1/0</option>
+								</select>
+							</tr>
+							<tr>
+								<label><p><span style="opacity: 0.5; color: black; text-align:left;">IP address</span>&emsp;&emsp;&emsp;
+									<span style="float:right;">Insert IP address of the device</span>
+								</p></label>
+							<input id="ipadd" placeholder="x.x.x.x"></input>
+							</tr>
+							<tr>
+								<label><p><span style="opacity: 0.5; color: black; text-align:left;">Preferred DNS</span>&emsp;&emsp;&emsp;
+									<span style="float:right;">Insert preferred DNS</span>
+								</p></label>
+							<input id="dns" placeholder="x.x.x.x"></input>
+							</tr>
+							<tr>
+								<p><span><button style="color: white; background-color: #1E90FF; border-radius: 5px; border-color: #1E90FF; text-align: center;width: 60px;height: 40px; " onclick="validate()">Apply</button></span>&emsp;&emsp;&emsp;
+									<span style="float:right;"><button style="text-align: center;width: 60px;height: 40px; border-radius: 5px;color: black; background-color:white; border-color: white;">Cancel</button></span>
+								</p>							</tr>
+						</table>
+					</form>
+				</td>
+			</tr>
+
+		</table>
+		
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

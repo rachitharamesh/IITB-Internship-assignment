@@ -1,0 +1,37 @@
+#li1:hover
+{
+	background-color: #1E90FF;
+	border-radius: 5px;
+	border:1px solid black;
+}
+
+#li2:hover
+{
+	background-color: #1E90FF;
+	border-radius: 5px;
+	border:1px solid black;
+}
+
+#li3:hover
+{
+	background-color: #1E90FF;
+	border-radius: 5px;
+	border:1px solid black;
+}
+
+#li4:hover
+{
+	background-color: #1E90FF;
+	border-radius: 5px;
+	border:1px solid black;
+}
+
+li
+{
+	border:1px solid grey; border-radius: 5px; font-size: 20px;
+}
+
+#th1
+{
+	background-color: #1E90FF;
+}
